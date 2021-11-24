@@ -1,0 +1,321 @@
+body{
+    font-family: "Zen Antique Soft", serif;
+    background-color:aliceblue;
+    color: midnightblue;
+}
+
+p{
+    padding: 15px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: aliceblue;
+    border-bottom: 3px solid orangered;
+}
+
+h1{
+    padding: 10px;
+    font-size: 22px;
+    color: orangered;
+}
+
+.nav_links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.nav_item a{
+    padding: 10px;
+}
+
+.nav_item a, .nav_item a:visited{
+    color: midnightblue;
+    text-decoration: none;
+}
+  
+.nav_item a:hover, a:focus{
+    color: orangered;
+    text-decoration: underline;
+    -webkit-text-decoration-style: dotted;
+            text-decoration-style: dotted;
+}
+
+a.skip{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+a.skip:focus{
+  top:20px;
+  color: midnightblue;
+  text-decoration-style: solid;
+}
+
+.current a{
+    color: orangered;
+    text-decoration: underline;
+    -webkit-text-decoration-style: dotted;
+            text-decoration-style: dotted;
+}
+
+.home img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 400px;
+  border: 5px midnightblue;
+}
+
+h2{
+  color: orangered;
+  font-size: 20px;
+}
+
+.activities{
+  padding: 15px;
+}
+
+.photos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.photos img{
+  border: 5px solid midnightblue;
+  margin: 10px 10px 10px 10px;
+  width: 300px;
+}
+
+h3{
+  color: orangered;
+  font-size: 15px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+footer{
+  background-color:transparent;
+  color: midnightblue;
+  padding: 30px;
+  text-align: center;
+  bottom: 0px;
+  width: 100%;
+}
+
+.about{
+  display: grid;
+  grid-template-columns: 5fr 5fr;
+  grid-template-rows: auto auto auto;
+  row-gap: 15px;
+}
+
+.intro{
+  grid-column: 1/ span 1;
+  grid-row: 1/ span 1;
+}
+
+.hobbies{
+  grid-column: 1/ span 2;
+  grid-row: 2/ span 1;
+}
+
+.me{
+  grid-column: 2/ span 1;
+  grid-row: 1/ span 1;
+  overflow: hidden;
+}
+
+.fact{
+  grid-column: 1/span 2;
+  grid-row: 3/ span 1;
+}
+
+.food{
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    row-gap: 15px;
+}
+
+#eats{
+    background-attachment: fixed !important; /* Parallax effect */
+    background-position: center !important; /* Parallax effect */
+    background-size: cover !important; /* Parallax effect */
+    grid-column: 1 / -1;
+    grid-row: 1 / span 1;
+    border-bottom: none;
+  }
+
+.food img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+  }
+
+.salad-image{
+    grid-column: 2 / span 1;
+    overflow: hidden;
+    grid-row: 2 / span 1;
+  }
+  
+.old-man{
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+.juicery-image{
+    grid-column: 2 / span 1;
+    overflow: hidden;
+    grid-row: 3 / span 1;
+  }
+  
+.juicery{
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+}
+
+.gabay-image{
+    grid-column: 2 / span 1;
+    overflow: hidden;
+    grid-row: 4 / span 1;
+  }
+  
+.gabay{
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+}
+
+.shakshukia-image{
+    grid-column: 2 / span 1;
+    overflow: hidden;
+    grid-row: 5 / span 1;
+  }
+  
+.shakshukia{
+    grid-column: 1 / span 1;
+    grid-row: 5 / span 1;
+}
+
+.moon-image{
+    grid-column: 2 / span 1;
+    overflow: hidden;
+    grid-row: 6 / span 1;
+  }
+  
+.moon-man{
+    grid-column: 1 / span 1;
+    grid-row: 6 / span 1;
+}
+
+.tamara-image{
+    grid-column: 2 / span 1;
+    overflow: hidden;
+    grid-row: 7 / span 1;
+  }
+  
+.tamara{
+    grid-column: 1 / span 1;
+    grid-row: 7 / span 1;
+  }
+
+.shuk-image{
+    grid-column: 2 / span 1;
+    overflow: hidden;
+    grid-row: 8 / span 1;
+  }
+  
+.shuk{
+    grid-column: 1 / span 1;
+    grid-row: 8 / span 1;
+  }
+
+.lashuk-image{
+    grid-column: 2 / span 1;
+    overflow: hidden;
+    grid-row: 9 / span 1;
+  }
+  
+.lashuk{
+    grid-column: 1 / span 1;
+    grid-row: 9 / span 1;
+  }
+
+.benedict-image{
+    grid-column: 2 / span 1;
+    overflow: hidden;
+    grid-row: 10 / span 1;
+  }
+  
+.benedict{
+    grid-column: 1 / span 1;
+    grid-row: 10 / span 1;
+  }
+
+.text{
+    background-color: rgba(255, 255, 255, .8);
+    padding: 5px;
+    align-self: top;
+    border: 5px solid midnightblue;
+  }
+
+  @media screen and (min-width: 600px){
+
+    .nav_links{
+      justify-content: space-between;
+      flex-direction: row;
+    }
+
+    .home img{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 500px;
+      height: 600px;
+      border: 5px midnightblue;
+    }
+
+    .about{
+      display: grid;
+      grid-template-columns: 5fr 5fr;
+      grid-template-rows: auto auto auto;
+      row-gap: 15px;
+    }
+    
+    .intro{
+      grid-column: 1/ span 1;
+      grid-row: 1/ span 1;
+    }
+    
+    .hobbies{
+      grid-column: 1/ span 1;
+      grid-row: 2/ span 1;
+    }
+    
+    .me{
+      grid-column: 2/ span 1;
+      grid-row: 1/ span 3;
+      overflow: hidden;
+    }
+
+    .fact{
+      grid-column: 1/span 1;
+      grid-row: 3/ span 1;
+    }
+}
